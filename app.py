@@ -13,7 +13,6 @@ matrix = RGBMatrix(options = options)
 
 @app.route('/')
 def hello_world():
-    matrix.SetPixel(0, 0, 0, 255, 255)
     return render_template("index.html")
 
 @app.route('/set_pixel', methods=['POST'])
