@@ -26,7 +26,7 @@ def set_pixel():
     return jsonify({"status": "success"})
 
 def updatePixel(x, y, r, g, b):
-    matrix.SetPixel(x, y, r, g, b)
+    matrix.SetPixel(0, 0, 0, 255, 255)
 
 if __name__ == '__main__':
     app.run(host = "0.0.0.0", port = 5090)
