@@ -3,7 +3,7 @@ from rgbmatrix import RGBMatrix, RGBMatrixOptions
 
 app = Flask(__name__)
 
-options = RGBMatrix()
+options = RGBMatrixOptions()
 options.rows = 64
 options.cols = 64
 options.chain_length = 1
