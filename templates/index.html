@@ -1,13 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/static/styles.css">
-    <script src="/static/script.js"></script>
+    <title>Matrix Pixel Controller</title>
 </head>
 <body>
-    <h1>PixelBoard</h1>
+    <h2>Set Pixel Color</h2>
+    <form id="pixelForm">
+        <label for="x">X:</label>
+        <input type="number" id="x" name="x" min="0" max="63"><br><br>
+
+        <label for="y">Y:</label>
+        <input type="number" id="y" name="y" min="0" max="63"><br><br>
+
+        <label for="color">Color:</label>
+        <input type="color" id="color" name="color"><br><br>
+
+        <button type="submit">Update Pixel</button>
+    </form>
 </body>
 </html>
